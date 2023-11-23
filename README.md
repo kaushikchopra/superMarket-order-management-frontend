@@ -1,3 +1,10 @@
+# Order Management App
+An app to support simple retail supermarkets to get the orders from the consumer and place the bill.
+
+For demo purpose, use the following credentials:
+### Username: admin@example.com
+### Password: Admin@123
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
