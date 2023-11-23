@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8070"
+const BASE_URL = "https://sm-order-manage.onrender.com"
 
 export default axios.create({
     baseURL: BASE_URL
