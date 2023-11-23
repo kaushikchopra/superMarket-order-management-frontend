@@ -40,6 +40,7 @@ const PersistLogin = () => {
       alignItems: "center",
       justifyContent: "center",
       height: "100vh",
+      width: "100vw"
     }}>
       {!persist ? (
         <Outlet />
@@ -49,11 +50,12 @@ const PersistLogin = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          backgroundColor: "#1F2A40",
         }}>
           <Typography variant="h5" color="textSecondary" gutterBottom>
             Loading is in progress...
           </Typography>
-          <CircularProgress sx={{ marginBottom: (theme) => theme.spacing(2) }} />
+          <CircularProgress sx={{ marginBottom: (theme) => theme.spacing(2), color: "white" }} />
         </Paper>
       ) : (
         <Outlet />

@@ -19,9 +19,9 @@ import Signup from "./scenes/auth/signup";
 import ForgotPassword from "./scenes/auth/forgot-password";
 import ActivationSuccess from "./scenes/auth/activation";
 import ResendActivation from "./scenes/auth/resend-activation";
-import Missing from "./scenes/missing";
 import ResetPassword from "./scenes/auth/reset-password";
 import DashboardLayout from "./layout/DashboardLayout";
+import NotFoundPage from "./scenes/not-found";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -64,7 +64,8 @@ function App() {
               </Route>
 
               {/* catch all */}
-              <Route path="*" element={<Missing />} />
+              <Route path="*" element={<NotFoundPage />} />
+
             </Route>
           </Routes>
 
